@@ -1,0 +1,23 @@
+{
+  "name": "fast-button",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@microsoft/fast-components": "^1.8.0",
+    "@microsoft/fast-element": "^0.16.0",
+    "lodash-es": "^4.17.15"
+  }
+}

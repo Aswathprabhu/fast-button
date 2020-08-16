@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <button-component>Fetch Users</button-component>
+    </div>
+    <script src="dist/bundle.js"></script>
+    <script>
+      const buttonCustomElement = document.querySelector('button-component');
+      buttonCustomElement.addEventListener('zpClick', () => {
+        buttonCustomElement.disabled = true;
+        return fetch('https://jsonplaceholder.typicode.com/users')
+          .then(response => response.json())
+          .then(json => console.log(json))
+          .then(() => buttonCustomElement.disabled = false)
+          .then(() => alert('Check console'));
+      });
+    </script>
+  </body>
+</html>
